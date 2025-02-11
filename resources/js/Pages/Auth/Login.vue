@@ -54,7 +54,7 @@ const submit = () => {
                     id="email"
                     v-model="form.email"
                     type="email"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full border border-blue"
                     required
                     autofocus
                     autocomplete="username"
@@ -68,7 +68,7 @@ const submit = () => {
                     id="password"
                     v-model="form.password"
                     type="password"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full border"
                     required
                     autocomplete="current-password"
                 />
@@ -97,7 +97,8 @@ const submit = () => {
 
 <style>
     #AuthenticationCard {
-        background: url(https://cdn.dribbble.com/users/6117646/screenshots/14975149/media/8f26446e227baeb76f1ae01e8dc1c558.gif);
+        background: url('../../../../public//images/bg-dar2.svg') no-repeat center center fixed;
+        background-size: cover;
          width: 100vw;
          height: 100vh;
          z-index:1;
@@ -112,6 +113,8 @@ const submit = () => {
     #email, #password{
         padding:10px
     }
+    
+
 
 </style>
 
